@@ -1,11 +1,7 @@
 """ 
-Stuff to think about
+`See also <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard>`_
 
-This is mostly to demo how to format stuff properly & what it will look like.
-
-It's based on numpy's readthedocs.io /latest/format.html#docstring-standard.
-
-Variable descriptions.... 
+Variable descriptions....
 Note: single line return (like so) seem to be ignore. Put a full blank line between sections if you want them to actually show separately.
 
 my_vars : float, optional
@@ -52,8 +48,6 @@ True   True   True
 Internal references
 --------------------------
 Internal crossreferences, like  how to do title_.
-
-
 
 
  """

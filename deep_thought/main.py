@@ -13,9 +13,11 @@ class SomeClass:
     def some_complicated_method(self, arg1, kwarg2=None):
         """ This is a summary docstring - fits on one line and followed by blankspace
 
-        :arg `arg1` is some stuff,
-        :keyword `kwarg2` is optional and is other stuff (defaults to None)
-        :return some more stuff
+        *arg1* is some stuff
+
+        *kwarg2* is optional and is other stuff (defaults to None)
+
+        *return* some more stuff
         """
 
         return "some more stuff"
