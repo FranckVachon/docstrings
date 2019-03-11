@@ -10,3 +10,5 @@ Welcome to dekkoDocsTest's documentation!
     :members:
 .. automodule:: deep_thought.main
     :members:
+.. automodule:: stuff_that_breaks.breakit
+    :memebers:
