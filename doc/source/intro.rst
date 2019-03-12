@@ -1,6 +1,6 @@
 .. _intro:
 
-SOME FIRST SECTION
+Documenter un package
 =========================================
 
 (Back to index) :ref:`index`.

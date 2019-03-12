@@ -5,8 +5,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Some other section
-=========================================
+Docstrings qui résument les docstrings d'une classe
+====================================================
 
 .. automodule:: deep_thought.main
     :members:
@@ -14,6 +14,6 @@ Some other section
 Arbitrary text and linking to other pages
 -----------------------------------------
 
-You can also add arbitrary text anywhere, and link to other documents :ref:`index`.
+You can also add arbitrary text anywhere (this is written in the .rst file, not in the .py files anywhere), and link to other documents :ref:`index`.
 
 
