@@ -1,5 +1,5 @@
 """ 
-`See also <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard>`_
+`See also <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard>`_ for more stuff
 
 Variable descriptions....
 Note: single line return (like so) seem to be ignore. Put a full blank line between sections if you want them to actually show separately.
@@ -14,9 +14,9 @@ This will bring you on `StackOverflow <https://stackoverflow.com/>`_
 
 .. _title: 
 
-=======================
-WE CAN ALSO DO SECTIONS
-=======================
+==========================================================
+WE CAN ALSO DO SECTION TITLES (auto-populates the index)
+==========================================================
 And we can also do subtitles
 -----------------------------
 
@@ -44,6 +44,21 @@ True   False  True
 False  True   True
 True   True   True
 =====  =====  ======
+
+Fancier tables
+-----------------
+
++------------+------------+-----------+
+| Header 1   | Header 2   | Header 3  |
++============+============+===========+
+| body row 1 | column 2   | column 3  |
++------------+------------+-----------+
+| body row 2 | Cells may span columns.|
++------------+------------+-----------+
+| body row 3 | Cells may  | - Cells   |
++------------+ span rows. | - contain |
+| body row 4 |            | - blocks. |
++------------+------------+-----------+
 
 Internal references
 --------------------------

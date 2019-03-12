@@ -1,21 +1,19 @@
+.. _secondary:
 
 .. documentation master file, created by
    sphinx-quickstart on Mon Mar 11 14:41:09 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. _index:
-
-Welcome to some docu showcase!
+Some other section
 =========================================
 
+.. automodule:: deep_thought.main
+    :members:
 
-.. toctree::
-   :maxdepth: 2
+Arbitrary text and linking to other pages
+-----------------------------------------
 
-   intro.rst
-   secondary.rst
-
-
+You can also add arbitrary text anywhere, and link to other documents :ref:`index`.
 
 
