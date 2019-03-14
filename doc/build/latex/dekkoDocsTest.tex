@@ -39,7 +39,6 @@
 \usepackage{hypcap}% it must be loaded after hyperref.
 % Set up styles of URL: it should be placed after hyperref.
 \urlstyle{same}
-\addto\captionsenglish{\renewcommand{\contentsname}{Contents:}}
 
 \addto\captionsenglish{\renewcommand{\figurename}{Fig.}}
 \addto\captionsenglish{\renewcommand{\tablename}{Table}}
@@ -50,12 +49,12 @@
 
 \addto\extrasenglish{\def\pageautorefname{page}}
 
-\setcounter{tocdepth}{1}
+
 
 
 
 \title{dekkoDocsTest Documentation}
-\date{Mar 11, 2019}
+\date{Mar 14, 2019}
 \release{0}
 \author{Franck}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -68,22 +67,159 @@
 \sphinxtableofcontents
 \phantomsection\label{\detokenize{index::doc}}
 
+\index{deep\_thought (module)}
+\sphinxhref{https://numpydoc.readthedocs.io/en/latest/format.html\#docstring-standard}{See also}
+
+Variable descriptions….
+Note: single line return (like so) seem to be ignore. Put a full blank line between sections if you want them to actually show separately.
+
+my\_vars : float, optional
+
+They suggest that \sphinxtitleref{my\_vars} should be enclosed in backticks.
+
+This will be \sphinxstyleemphasis{italics} and this will be \sphinxstylestrong{bold} and \sphinxcode{this will be monospace whatever that means}
+
+This will bring you on \sphinxhref{https://stackoverflow.com/}{StackOverflow}
 
 
-\chapter{Indices and tables}
-\label{\detokenize{index:welcome-to-dekkodocstest-s-documentation}}\label{\detokenize{index:indices-and-tables}}\begin{itemize}
-\item {} 
-\DUrole{xref,std,std-ref}{genindex}
+\chapter{WE CAN ALSO DO SECTIONS}
+\label{\detokenize{index:title}}\label{\detokenize{index:module-deep_thought}}\label{\detokenize{index:we-can-also-do-sections}}\label{\detokenize{index:welcome-to-dekkodocstest-s-documentation}}
 
-\item {} 
-\DUrole{xref,std,std-ref}{modindex}
+\section{And we can also do subtitles}
+\label{\detokenize{index:and-we-can-also-do-subtitles}}\begin{description}
+\item[{Using definition}] \leavevmode
+This is pretty useful for long texts/classes/modules/methods. Term to define must be a one-liner. Then tab text below - all of the following paragraphs starting with the tabbed text will be “the definition”
 
-\item {} 
-\DUrole{xref,std,std-ref}{search}
-
-\end{itemize}
+\end{description}
 
 
+\section{Option lists (see a 2nd subtitle)}
+\label{\detokenize{index:option-lists-see-a-2nd-subtitle}}\begin{optionlist}{3cm}
+\item [-f]  
+must have at least 2 spaces between the -flag \& the description for it to count as such.
+\item [-{-}input]  
+I think this look pretty doh.
+\end{optionlist}
+
+
+\section{Simple tables}
+\label{\detokenize{index:simple-tables}}
+Explain logical stuff \& summarize:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstartmulticolumn{2}%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{3}}
+\sphinxstylethead{\sphinxstyletheadfamily Inputs
+\unskip}\relax \par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+&\sphinxstylethead{\sphinxstyletheadfamily 
+Output
+\unskip}\relax \\
+\hline\sphinxstylethead{\sphinxstyletheadfamily 
+A
+\unskip}\relax &\sphinxstylethead{\sphinxstyletheadfamily 
+B
+\unskip}\relax &\sphinxstylethead{\sphinxstyletheadfamily 
+A or B
+\unskip}\relax \\
+\hline
+False
+&
+False
+&
+False
+\\
+\hline
+True
+&
+False
+&
+True
+\\
+\hline
+False
+&
+True
+&
+True
+\\
+\hline
+True
+&
+True
+&
+True
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\section{Internal references}
+\label{\detokenize{index:internal-references}}
+Internal crossreferences, like  how to do {\hyperref[\detokenize{index:title}]{\sphinxcrossref{title}}}.
+\phantomsection\label{\detokenize{index:module-deep_thought.main}}\index{deep\_thought.main (module)}
+More docstrings here
+\index{SomeClass (class in deep\_thought.main)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:deep_thought.main.SomeClass}}\pysigline{\sphinxbfcode{class }\sphinxcode{deep\_thought.main.}\sphinxbfcode{SomeClass}}
+Class docstring. A one-line. No spaces before/after the docstring. Used by auto-indexing
+
+A constructore - adding details about my cstor here (\_\_init\_\_ is skipped by default)
+\index{some\_complicated\_method() (deep\_thought.main.SomeClass method)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:deep_thought.main.SomeClass.some_complicated_method}}\pysiglinewithargsret{\sphinxbfcode{some\_complicated\_method}}{\emph{arg1}, \emph{kwarg2=None}}{}
+This is a summary docstring - fits on one line and followed by blankspace
+
+\sphinxstyleemphasis{arg1} is some stuff
+
+\sphinxstyleemphasis{kwarg2} is optional and is other stuff (defaults to None)
+
+\sphinxstyleemphasis{return} some more stuff
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+\index{Subclass (class in deep\_thought.main)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:deep_thought.main.Subclass}}\pysigline{\sphinxbfcode{class }\sphinxcode{deep\_thought.main.}\sphinxbfcode{Subclass}}
+Class docstring. A one-line. No spaces before/after the docstring. Used by auto-indexing
+
+A constructore
+\index{another\_method() (deep\_thought.main.Subclass method)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{index:deep_thought.main.Subclass.another_method}}\pysiglinewithargsret{\sphinxbfcode{another\_method}}{\emph{arg1}}{}
+This is a summary docstring - fits on one line and followed by blankspace
+
+:arg \sphinxtitleref{arg1} is some int,
+:return 42
+
+\end{fulllineitems}
+
+
+\end{fulllineitems}
+
+
+
+\renewcommand{\indexname}{Python Module Index}
+\begin{sphinxtheindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+\bigletter{d}
+\item {\sphinxstyleindexentry{deep\_thought}}\sphinxstyleindexpageref{index:\detokenize{module-deep_thought}}
+\item {\sphinxstyleindexentry{deep\_thought.main}}\sphinxstyleindexpageref{index:\detokenize{module-deep_thought.main}}
+\end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}
 \printindex
